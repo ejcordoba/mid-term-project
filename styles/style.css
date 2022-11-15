@@ -1,0 +1,7 @@
+body {
+  background-color: #f2f4fc;
+}
+.container {
+  display: flex;
+  width: 80vw;
+}
