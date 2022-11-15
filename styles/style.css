@@ -1,7 +1,60 @@
 body {
   background-color: #f2f4fc;
 }
+
 .container {
   display: flex;
   width: 80vw;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+header {
+}
+
+nav {
+}
+
+.logo {
+}
+
+.links {
+}
+
+.contact-button {
+}
+
+.preview {
+}
+
+.partners {
+}
+
+.projects {
+}
+
+.reviews {
+}
+
+.services {
+}
+
+.questions {
+}
+
+footer {
+}
+
+.contact-info {
+}
+
+.footer-links {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
