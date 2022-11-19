@@ -182,17 +182,26 @@
     </section>
     <section class="questions">
       <div class="questions-container">
-        <h1>Do you have any questions?</h1>
+        <h1 class="questions-heading">Do you have any questions?</h1>
         <div class="subtitle">Let us help you!</div>
-        <form action="">
-          <div class="textfield-wrapper">
-            <div class="text-field-icon"></div>
-            <input type="email" name="" id="" required />
-          </div>
-          <input type="submit" value="Subscribe" />
-        </form>
-        <div class="form-done"></div>
-        <div class="form-fail"></div>
+        <div class="form-block">
+          <form class="question-form" action="">
+            <div class="textfield-wrapper">
+              <div class="text-field-icon"></div>
+              <input
+                class="text-field"
+                type="email"
+                name=""
+                id=""
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <input class="newsletter-button" type="submit" value="Subscribe" />
+          </form>
+          <div class="form-done"></div>
+          <div class="form-fail"></div>
+        </div>
       </div>
     </section>
     <section class="footer">
