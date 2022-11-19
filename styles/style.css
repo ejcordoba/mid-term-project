@@ -511,3 +511,36 @@ body {
   cursor: pointer;
   border-radius: 0;
 }
+/*Footer*/
+.footer-content {
+  display: flex;
+  width: 260px;
+  max-width: 260px;
+  flex-direction: column;
+}
+.footer-logo {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 30px;
+  background-image: url(../assets/logos/circle.svg);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer-address {
+  font-size: 17px;
+  line-height: 150%;
+  color: #6b708d;
+}
+.footer-links {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.footer-link {
+  font-size: 17px;
+  text-decoration: none;
+}
