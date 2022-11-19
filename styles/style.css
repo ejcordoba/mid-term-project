@@ -1,60 +1,103 @@
 body {
   background-color: #f2f4fc;
+  font-family: Roboto, sans-serif;
+  color: #292e47;
+  font-size: 14px;
+  line-height: 20px;
 }
-
 .container {
   display: flex;
-  width: 80vw;
-  margin: 0 auto;
-  border: 1px solid red;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
 }
-
-header {
+/*Header*/
+.navbar-logo {
+  width: 60px;
+  height: 18px;
+  background-image: url("../assets/logos/circle.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  float: left;
+  text-decoration: none;
+  color: #333333;
 }
-
-nav {
-}
-
-.logo {
-}
-
 .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
-.contact-button {
+.navlink {
+  font-family: Roboto, sans-serif;
+  color: #6b708d;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  padding: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.preview {
+.navlink:hover {
+  color: #072ac8;
 }
-
-.partners {
+.button.primary-button {
+  padding: 15px 30px;
+  background-color: #072ac8;
+  font-size: 17px;
+  color: white;
 }
-
-.projects {
+/*Preview*/
+.preview-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.reviews {
+.preview-content-info {
+  max-width: 530px;
 }
-
-.services {
+.preview-heading {
+  color: #292e47;
+  font-size: 60px;
+  line-height: 130%;
 }
-
-.questions {
+.preview-description {
+  max-width: 435px;
+  margin-bottom: 40px;
+  color: #6b708d;
+  font-size: 20px;
+  line-height: 150%;
 }
-
-footer {
+.preview-image {
+  position: relative;
+  display: block;
 }
-
-.contact-info {
+.image-1 {
+  position: absolute;
+  left: -19%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  max-width: 375px;
 }
-
-.footer-links {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
+.image-main {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.image-2 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -25%;
+  bottom: -22%;
+  max-width: 375px;
 }
