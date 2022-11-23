@@ -1,14 +1,18 @@
-const getAllBeers = async () => {
-	const allBeersFetchResponse = await fetch('https://api.punkapi.com/v2/beers')
-	const allBeers = await allBeersFetchResponse.json()
-	return allBeers
+if (localStorage.getItem('id') !== null) {
+    const beerId = localStorage.getItem('id');
+    const getBeerDetail = async () => {
+        const getBeerDetailFetchResponse = await fetch(`https://api.punkapi.com/v2/beers/${beerId}`)
+        const beerData = await getBeerDetailFetchResponse.json()
+        return beerData
+    }
 }
 const main = async() => {
-    const allBeersData = await getAllBeers()
-    updateCards(allBeersData);
+    const beerData = await getBeerDetail()
+    updateBeerData(beerData);
 }
-function updateCards(allBeersData) {
-    const projectCards = document.querySelectorAll('.project-card');
+function updateBeerData(beerData) {
+    console.log(beerData);
+    /* const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(projectCard => {
         const randomBeer = allBeersData[Math.floor(Math.random() * allBeersData.length)];
         projectCard.querySelector('.project-card-image').src = randomBeer.image_url;
@@ -16,11 +20,6 @@ function updateCards(allBeersData) {
         projectCard.querySelector('.project-description').innerHTML = randomBeer.description;
         projectCard.querySelector('.project-link').id = randomBeer.id;
         projectCard.addEventListener('click', setProjectDetail);
-    })
-}
-function setProjectDetail(event) {
-    const target = event.currentTarget;
-    localStorage.clear();
-    localStorage.setItem('id',target.querySelector('.project-link').id)
+    }) */
 }
 main()
